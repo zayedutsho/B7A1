@@ -24,8 +24,7 @@ type StringOrNumber = string | number;
 const checkType = (value: StringOrNumber): string => {
   return typeof value === "string" ? "String" : "Number";
 };
-
-// console.log(checkType(28));
+checkType(28);
 
 // Problem 4:
 
@@ -86,7 +85,7 @@ student.getDetails();
 
 // Problem 7:
 
-const getIntersection = (arr1: number[], arr2: number): number[] => {
+const getIntersection = (arr1: number[], arr2: number[]): number[] => {
   const result = arr1.filter((num) => arr2.includes(num));
   return result;
 };
