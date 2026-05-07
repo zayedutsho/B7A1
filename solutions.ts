@@ -6,7 +6,7 @@ const filterEvenNumbers = (arr: number[]): number[] => {
 };
 
 const arr: number[] = [1, 2, 3, 4, 5, 6];
-// console.log(filterEvenNumbers(arr));
+filterEvenNumbers(arr);
 
 // Problem 2:
 
@@ -16,7 +16,6 @@ const reverseString = (str: string): string => {
 };
 
 const reverse = reverseString("typescript");
-// console.log(reverse);
 
 // Problem 3:
 
@@ -35,7 +34,7 @@ function getProperty<T, K extends keyof T>(obj: T, key: k): T[k] {
 }
 
 const user = { id: 1, name: "John Doe", age: 21 };
-// console.log(getProperty(user, "name"));
+getProperty(user, "name");
 
 // Problem 5:
 
@@ -58,7 +57,6 @@ const myBook: Book = {
   publishedYear: 2024,
 };
 const updatedBook = toggleReadStatus(myBook);
-// console.log(updatedBook);
 
 // Problem 6:
 
@@ -84,7 +82,7 @@ class Student extends Person {
 }
 
 const student = new Student("Alice", 20, "A");
-// console.log(student.getDetails());
+student.getDetails();
 
 // Problem 7:
 
@@ -94,4 +92,3 @@ const getIntersection = (arr1: number[], arr2: number): number[] => {
 };
 
 const finalArray = getIntersection([1, 2, 3, 4, 5], [3, 4, 5, 6, 7]);
-// console.log(finalArray);
