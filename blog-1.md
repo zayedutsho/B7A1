@@ -15,6 +15,8 @@ value.notExistMethod();
 and in this example TypeScript won’t show errors, even if the code is wrong.
 
 unknown: its safer version of any lets understand it by an example
+
+Example:
 let value :unknown="zayed"
 vale.toUpperCase()///it will show error
 Because TypeScript forces us to check the type first.
